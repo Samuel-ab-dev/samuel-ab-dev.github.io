@@ -1,0 +1,154 @@
+.formacao {
+  background: #141414;
+  color: white;
+}
+
+.formacao_container {
+  max-width: 1200px;
+  padding: 40px 20px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 100px;
+  position: relative;
+}
+
+.formacao_container::after {
+  content: "";
+  display: block;
+  width: 130px;
+  height: 100px;
+  background: url("../07-projeto-portfolio/07-projeto-portfolio/0701-primeiros-passos/img/detalhe.svg")
+    no-repeat center;
+  position: absolute;
+  bottom: -50px;
+  left: 20px;
+}
+
+.formacao .second_title {
+  color: black;
+  max-width: 5ch;
+}
+
+.formacao_text {
+  font-size: 1.5rem;
+  line-height: 1.33;
+  margin-bottom: 60px;
+  max-width: 40ch;
+  color: #a3a3a3;
+}
+
+.formacao_text strong {
+  color: #ffffff;
+}
+
+.faculdade_list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 60px;
+}
+
+.faculdade {
+  flex: 1;
+  background: #000000;
+  padding: 20px;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+}
+
+.faculdade_tipo {
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  color: #a3a3a3;
+  margin-bottom: 10px;
+}
+
+.faculdade_curso {
+  font-size: 1.275rem;
+  line-height: 1.4;
+  margin-bottom: 40px;
+  position: relative;
+  flex: 1;
+}
+
+.faculdade_curso::before {
+  content: "";
+  display: block;
+  width: 4px;
+  height: 20px;
+  background: linear-gradient(#b6f829, #67dd0a);
+  position: absolute;
+  left: -24px;
+}
+
+.faculdade_ins {
+  font-size: 1.125rem;
+  color: #a3a3a3;
+}
+
+.cursos {
+  margin-bottom: 60px;
+}
+
+.forma_extra h3 {
+  font-size: 0.875rem;
+  line-height: 1.4;
+  color: #8f8f8f;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.forma_extra h3::before {
+  display: block;
+  content: "";
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  left: -36px;
+  top: -4px;
+}
+
+.cursos h3::before {
+  background: url("../07-projeto-portfolio/07-projeto-portfolio/0701-primeiros-passos/img/cursos.svg")
+    no-repeat center center;
+}
+
+.languages h3::before {
+  background: url("../07-projeto-portfolio/07-projeto-portfolio/0701-primeiros-passos/img/idiomas.svg")
+    no-repeat center center;
+}
+
+.forma_extra li {
+  font-size: 1.125rem;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+
+.forma_extra span {
+  color: #8f8f8f;
+}
+
+.cursos li {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 800px) {
+  .formacao_container {
+    grid-template-columns: 1fr;
+    padding: 60px 20px;
+    gap: 40px;
+  }
+  .formacao .second_title {
+    color: #ffffff;
+  }
+  .formacao_text {
+    font-size: 1.25rem;
+  }
+  .forma_extra h3::before {
+    position: initial;
+    margin-bottom: 10px;
+  }
+}
